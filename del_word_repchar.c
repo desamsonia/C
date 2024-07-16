@@ -1,3 +1,9 @@
+//delete the word in given string,if letters are repeated in word.
+i/p1: India is my country
+o/p1: is my country
+i/p2: Sonia desam reddy chennai hyderabad
+o/p2: Sonia desam
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
