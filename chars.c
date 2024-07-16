@@ -1,3 +1,4 @@
+//Method 2
 #include<stdio.h>
 #include<string.h>
 
