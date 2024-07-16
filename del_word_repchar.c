@@ -1,3 +1,4 @@
+// Method 1 
 //delete the word in given string,if letters are repeated in word.
 i/p1: India is my country
 o/p1: is my country
