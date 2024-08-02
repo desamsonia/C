@@ -1,13 +1,14 @@
 #include "header.h"
 extern int cnt;
 
-void add(DATABASE *p)
+void addToCart(PRODUCT *p)
 {
-   printf("Enter name:");
+   int i;
+   printf("Enter product name:");
    scanf("%s",p[cnt].name);
-   printf("Enter phone number:");
-   scanf("%s",p[cnt].phone);
-   printf("Enter email id:");
-   scanf("%s",p[cnt].email);
+   printf("Enter pages:");
+   scanf("%d",&p[cnt].quantity);
+   printf("Enter cost of the product:");
+   scanf("%f",&p[cnt].cost);
    cnt++;
 }

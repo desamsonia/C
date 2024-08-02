@@ -1,5 +1,6 @@
-#include "header.h"
-void sortCart(PRODUCT *p)
+#include "header_DMA.h"
+
+PRODUCT *sortCart(PRODUCT *p)
 {
     int i,j;
     char *str = 0;
@@ -24,5 +25,5 @@ void sortCart(PRODUCT *p)
             }
         }
     }
-
+    return p;
 }

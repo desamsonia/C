@@ -1,11 +1,16 @@
-#include "header.h"
+#include"header.h"
 extern int cnt;
-void view(DATABASE *p)
+
+void viewCart(PRODUCT *p)
 {
-    int i;
-    printf("Name\tPhone\tEmailID\n");
-    for(i=0;i<cnt;i++)
-    {
-        printf("%s\t%s\t%s\n",p[i].name,p[i].phone,p[i].email);
-    }
+	int i;
+	if(cnt==0)
+		printf("your is empty\n");
+	else
+	{   printf("name\t cost\t quantity\t amount\n");
+		for(i=0;i<cnt;i++)
+		{
+		printf("%s\t %f\t %d\t %f\n",p[i].name,p[i].cost,p[i].quantity,p[i].cost * p[i].quantity);
+		}
+	}
 }
