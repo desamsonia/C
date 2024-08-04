@@ -1,11 +1,12 @@
 #include <stdio.h>
 typedef struct student
 {
-char *a;
+char*a;
 }stu;
+
 void main()
 {
-       	stu s;
-        s.a="hi";
+struct student s;
+        s.a="hey";
 printf("%s", s.a);
 }
