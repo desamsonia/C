@@ -1,7 +1,19 @@
-#include<stdio.h>
-main()
+# include<stdio.h>
+# include<stdlib.h>
+
+void fun(int *p)
 {
-	int a=555,*ptr=&a,b=*ptr;
-	printf("%d %d %d",++a,--b,*ptr++);
-	return 0;
+   p = (int*)malloc(sizeof(int));
+   printf("fun:%p\n",p);
+}
+
+int main()
+{
+	int *p;
+	fun(p);
+        p=(int*)malloc(sizeof(int));
+        printf("main:%p\n",p);
+	*p = 6;
+	printf("%d\n",*p);
+	return(0);
 }
